@@ -1,1 +1,1 @@
-createsa symbolic link to /bin/ls, named __ls__
+Copy HTML files
