@@ -1,1 +1,1 @@
--rwxr-x-wx
+mirror permissions
