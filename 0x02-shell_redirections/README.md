@@ -1,1 +1,1 @@
-list last 10 files of /etc/passwd
+list first 10 lines of a file
