@@ -1,1 +1,1 @@
-lists 10 last lines
+list last 10 files of /etc/passwd
