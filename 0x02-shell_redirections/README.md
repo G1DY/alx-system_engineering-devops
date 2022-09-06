@@ -1,1 +1,1 @@
-display 10 newest directories
+10 newest directories
