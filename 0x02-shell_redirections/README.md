@@ -1,1 +1,1 @@
-duplicates list line of file iacta
+deletes all the regular files (not the directories) with a .js
