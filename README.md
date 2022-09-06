@@ -1,1 +1,1 @@
-Trying to Print absolute path name
+Shell, init files, variables and expansions
