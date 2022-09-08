@@ -1,1 +1,1 @@
-number from base 2 to base 10
+prints all the possible combinations of two letters
