@@ -11,7 +11,7 @@ pidfile=/var/run/myscript.pid
 echo "$$" > "$pidfile"
 
 function cleanup {
-        rm "$pidfile"
+	rm -rf "$pidfile"
         echo "Exiting..."
         exit 0
 }
@@ -25,5 +25,5 @@ trap 'echo "I hate the kill command"' SIGTERM
 while true
 do
         echo "To infinity and beyond"
-	sleep 2
+        sleep 2
 done
