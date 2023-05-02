@@ -11,7 +11,7 @@ pidfile=/var/run/myscript.pid
 echo "$$" > "$pidfile"
 
 function cleanup {
-	rm -rf "$pidfile"
+	rm -f "$pidfile"
         echo "Exiting..."
         exit 0
 }
