@@ -10,16 +10,20 @@
 pidfile=/var/run/myscript.pid
 echo "$$" > "$pidfile"
 
-cleanup {
-	rm "$pidfile"
-	exit
+function cleanup {
+        rm "$pidfile"
+        echo "Exiting..."
+        exit 0
 }
+
+trap 'cleanup' SIGQUIT SIGTERM
+
+trap 'echo "Y U no love me?!"' SIGINT
+
+trap 'echo "I hate the kill command"' SIGTERM
 
 while true
 do
-	echo "To infinity and beyond"
+        echo "To infinity and beyond"
 	sleep 2
-	trap 'echo "Y U no love me?!"' SIGINT
-	trap 'echo "I hate the kill command"' && 'cleanup' SIGTERM
-	trap 'cleanup' SIGQUIT
 done
