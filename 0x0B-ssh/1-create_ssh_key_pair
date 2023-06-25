@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# creating rsa key
+ssh-key -b 4096 -f school -N betty
