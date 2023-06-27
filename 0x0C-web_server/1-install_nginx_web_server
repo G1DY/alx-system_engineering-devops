@@ -15,4 +15,3 @@ echo "server {
 	}
 }" > /etc/nginx/sites-available/default
 servive nginx start
-fi
