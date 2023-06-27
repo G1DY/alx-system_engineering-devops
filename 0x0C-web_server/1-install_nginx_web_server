@@ -14,4 +14,4 @@ echo "server {
 		return 200 'Hello World!';
 	}
 }" > /etc/nginx/sites-available/default
-servive nginx start
+service nginx start
