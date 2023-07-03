@@ -13,9 +13,9 @@ sudo mkdir -p /var/www/html
 # change mod to allow us to easily create files in this directory
 sudo chmod -R 755 /var/www
 # create index.html
-echo "Hello World!" | sudo tee/var/www/html/index.html
+echo "Hello World!" | sudo tee /var/www/html/index.html
 # create error 404 page
-echo "Ceci n'est pas une page" | sudo tee/var/www/html/404.html
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 # redirect for a single page and add header to display hostname
 string_for_replacement="server_name _;\n\tadd_header X-Served-By \$hostname;\n\trewrite ^\/redirect_me https:\/\/www.blog.gideon-web-01.com permanent;"
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
