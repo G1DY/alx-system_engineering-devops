@@ -13,6 +13,7 @@ In this project i learnt how to setup a high availabilty infrastructure. A load 
 <br>
 <br>
 ### Concepts/Resources
+
 - [Load balancer](https://intranet.alxswe.com/concepts/46)
 - [Web stack debugging](https://intranet.alxswe.com/concepts/68)
 - [Introduction to load-balancing and HAproxy](https://intranet.alxswe.com/rltoken/B7f3oz8i3Xvvom_YQZzLnQ)
