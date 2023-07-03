@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Configure Nginx so that its HTTP response contains a custom header
+# The name of the custom HTTP header must be X-Served-By
+# The value must be the hostname of the server Nginx is running on
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+# confire firewall to allow request through port 80
+sudo ufw allow 'Nginx HTTP'
+sudo ufw allow 'ssh'
+
+sudo mkdir -p /var/www/html
+# change mod to allow us to easily create files in this directory
+sudo chmod -R 755 /var/www
+# create index.html
+echo "Hello World!" | sudo tee/var/www/html/index.html
+# create error 404 page
+echo "Ceci n'est pas une page" | sudo tee/var/www/html/404.html
+# redirect for a single page and add header to display hostname
+string_for_replacement="server_name _;\n\tadd_header X-Served-By \$hostname;\n\trewrite ^\/redirect_me https:\/\/www.blog.gideon-web-01.com permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+# configure redirect for 404
+string_for_replacement="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+sudo sed -i "s/listen 80 default_server;/$string_for_replacement/" /etc/nginx/sites-enabled/default
+ 
+# restart nginx
+sudo service nginx restart
