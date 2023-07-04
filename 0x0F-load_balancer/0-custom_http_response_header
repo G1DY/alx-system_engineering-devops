@@ -14,13 +14,13 @@ sudo mkdir -p /var/www/html
 sudo chmod -R 755 /var/www/html
 
 sudo touch /var/www/html/index.html
-echo "Hello World" > /var/www/html/index.html
+sudo echo "Hello World" > /var/www/html/index.html
 
 sudo touch /var/www/html/404.html
-echo "Ceci n'est pas une page" > /var/www/html/404.html
+sudo echo "Ceci n'est pas une page" > /var/www/html/404.html
 
 sudo chmod +w /etc/nginx/sites-available/default
-printf %s "server {
+sudo printf %s "server {
     listen 80 default_server;
     listen [::]:80 default_server;
     add_header X-Served-By '$HOSTNAME';
