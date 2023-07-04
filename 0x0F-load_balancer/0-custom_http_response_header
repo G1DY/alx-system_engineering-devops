@@ -3,6 +3,7 @@
 # The name of the custom HTTP header must be X-Served-By
 # The value must be the hostname of the server Nginx is running on
 
+set -x
 sudo apt-get -y update
 sudo apt-get -y install nginx
 # confire firewall to allow request through port 80
@@ -10,13 +11,15 @@ sudo ufw allow 'Nginx HTTP'
 sudo ufw allow 'ssh'
 
 sudo mkdir -p /var/www/html
-# change mod to allow us to easily create files in this directory
-sudo chmod -R 755 /var/www
+sudo chmod -R 755 /var/www/html
+
 sudo touch /var/www/html/index.html
 echo "Hello World" > /var/www/html/index.html
+
 sudo touch /var/www/html/404.html
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 
+sudo chmod +w /etc/nginx/sites-available/default
 printf %s "server {
     listen 80 default_server;
     listen [::]:80 default_server;
@@ -35,6 +38,4 @@ printf %s "server {
     }
 }" > /etc/nginx/sites-available/default
 
- 
-# restart nginx
 sudo service nginx restart
