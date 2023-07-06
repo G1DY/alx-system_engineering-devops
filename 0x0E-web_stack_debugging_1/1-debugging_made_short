@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # modification of task 0
-ls -sf /etc/nginx/sites-available/default/ /etc/nginx/sites-enabled/default
+ls -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx start
 kill "$(grep 'nginx' | head -1)"
