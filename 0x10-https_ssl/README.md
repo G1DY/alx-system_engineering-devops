@@ -5,6 +5,6 @@ In this project i learnt about how HTTPS and SSL work. I configured the servers 
 
 <center><h2>My HA-Setup</h2></center>
 
-- ![Screenshot](HA_setup.png)
+- ![Screenshot](Screenshot%20from%202023-07-06%2009-56-07.png)
 
 ---
