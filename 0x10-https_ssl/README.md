@@ -3,7 +3,7 @@ In this project i learnt about how HTTPS and SSL work. I configured the servers 
 
 ---
 
-<center><h2>The Setup</h2></center>
+<center><h2>Infrastructure Setup</h2></center>
 
 - ![Screenshot](Screenshot%20from%202023-07-06%2009-56-07.png)
 
