@@ -4,6 +4,7 @@ In this project i used `ufw` to configure firewall on my issued servers
 ---
 
 <center><h2>Infrastructure Setup</h2></center>
+
 ![Screenshot](Screenshot%20from%202023-07-17%2018-53-40.png)
 
 <center><h3>Project Tasks</h3></center>
