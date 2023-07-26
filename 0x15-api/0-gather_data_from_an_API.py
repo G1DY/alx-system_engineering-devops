@@ -14,4 +14,4 @@ def todolist():
     [print("\t {}".format(c)) for c in completed]
 
 if __name__ = "__main__":
-    todolists()
+    todolist()
