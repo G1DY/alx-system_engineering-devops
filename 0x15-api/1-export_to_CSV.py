@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Returns todo list for a given employee in CSV format"""
+import csv
 import requests
 import sys
-import csv
 
 
 def todolist(csv):
