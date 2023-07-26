@@ -3,6 +3,7 @@
 import requests
 import sys
 
+
 def todolist():
     url = "https://jsonplaceholder.typicode.com/"
     user = requests.get(url + "users/{}".format(sys.argv[1])).json()
@@ -12,6 +13,7 @@ def todolist():
     print("Employee {} is done with tasks({}/{}):".format(
         user.get("name"), len(completed), len(todos)))
     [print("\t {}".format(c)) for c in completed]
+
 
 if __name__ = "__main__":
     todolist()
