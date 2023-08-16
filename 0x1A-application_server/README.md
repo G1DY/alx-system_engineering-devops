@@ -10,7 +10,7 @@ In this project i configured my nginx server to serve `AirBnB clone v2 - Web fra
 
 <center><h3>Project Tasks</h3></center>
 
-#### **0. Set up development with Python **
+#### **0. Set up development with Python**
 
 ```
 Let’s serve what you built for `AirBnB clone v2 - Web framework on web-01`. This task is an exercise in setting up your development environment, which is used for testing and debugging your code before deploying it to production.
