@@ -6,4 +6,4 @@ In this project i configured my nginx server to serve `AirBnB clone v2 - Web fra
 
 <center><h2>Infrastructure Design</h2></center>
 
-
+![Image](c7d1ed0a2e10d1b4e9b3.jpg)
