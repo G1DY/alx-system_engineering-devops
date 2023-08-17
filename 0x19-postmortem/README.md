@@ -4,4 +4,4 @@ In this project we were tasked to come up with a creative incident report based 
 
 ---
 
-![Image](
+![Image](Screenshot%20from%202023-08-17%2012-29-06.png)
